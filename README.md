@@ -1,6 +1,6 @@
 # Ottimizzatore Taglio Barre
 
-Un'applicazione desktop con interfaccia grafica per ottimizzare il taglio di barre metalliche, minimizzando gli scarti e riducendo i costi di produzione.
+Un'applicazione desktop con interfaccia grafica per ottimizzare il taglio di barre e profilati, minimizzando gli scarti e riducendo i costi di produzione.
 
 ## Caratteristiche
 
