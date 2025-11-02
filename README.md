@@ -2,31 +2,45 @@
 
 Un'applicazione desktop con interfaccia grafica per ottimizzare il taglio di barre e profilati, minimizzando gli scarti e riducendo i costi di produzione.
 
+## 📥 Download
+
+**[⬇️ Scarica l'eseguibile per Windows (v1.0.0)](https://github.com/Nicolacecca/ottimizzatore-taglio-barre/releases/latest)**
+
+Nessuna installazione richiesta! Scarica il file `.exe` ed eseguilo direttamente.
+
+---
+
 ## Caratteristiche
 
 - **Interfaccia grafica intuitiva** - Facile da usare, non richiede competenze tecniche
 - **Ottimizzazione intelligente** - Algoritmo First Fit Decreasing per minimizzare gli scarti
 - **Supporto multi-barra** - Gestione di barre di diverse lunghezze
 - **Scenari multipli** - Genera e confronta diverse soluzioni di taglio
-- **Export professionale** - Esportazione in PDF ed Excel
-- **Calcolo automatico** - Determina il fabbisogno minimo di barre
+- **Export PDF professionale** - Report completo con schema di taglio
+- **Import Excel** - Importa dati da file Excel formattati
+- **Calcolo fabbisogno** - Determina il materiale da ordinare al venditore
 
 ## Screenshot
 
 ![Screenshot dell'applicazione](screenshot.png)
 
-## Requisiti
+---
 
-- Python 3.7 o superiore
-- Sistema operativo: Windows, macOS, Linux
+## 🚀 Installazione
 
-## Installazione
+### Metodo 1: Download eseguibile (CONSIGLIATO per utenti Windows)
 
-### Metodo 1: Utilizzo diretto (richiede Python)
+1. [Scarica l'ultima release](https://github.com/Nicolacecca/ottimizzatore-taglio-barre/releases/latest)
+2. Estrai o esegui il file `OttimizzatoreTaglioBarre.exe`
+3. L'applicazione è pronta all'uso!
+
+**Nota**: Windows Defender potrebbe mostrare un avviso. Clicca su "Maggiori informazioni" → "Esegui comunque". È normale per software senza firma digitale.
+
+### Metodo 2: Esecuzione da codice sorgente (richiede Python)
 
 1. Clona il repository:
 ```bash
-git clone https://github.com/TUO_USERNAME/ottimizzatore-taglio-barre.git
+git clone https://github.com/Nicolacecca/ottimizzatore-taglio-barre.git
 cd ottimizzatore-taglio-barre
 ```
 
@@ -40,48 +54,60 @@ pip install -r requirements.txt
 python ottimizzatore_taglio.py
 ```
 
-### Metodo 2: Creazione eseguibile
+### Metodo 3: Creazione eseguibile personalizzato
 
-Puoi creare un eseguibile standalone con PyInstaller:
+Se vuoi creare il tuo eseguibile:
 
 ```bash
 pip install pyinstaller
 python build_exe.py
 ```
 
-L'eseguibile sara disponibile nella cartella `dist/`.
+L'eseguibile sarà disponibile nella cartella `dist/`.
 
-## Utilizzo
+---
+
+## 📖 Utilizzo
 
 ### 1. Configurazione iniziale
 
-- **Barre disponibili**: Inserisci le lunghezze e quantita delle barre che hai a disposizione
+- **Barre disponibili**: Inserisci le lunghezze e quantità delle barre in magazzino
 - **Spessore lama**: Imposta lo spessore della lama di taglio (default: 3mm)
 
 ### 2. Inserimento pezzi richiesti
 
-- Aggiungi i pezzi da tagliare specificando lunghezza e quantita
-- Utilizza i pulsanti "Aggiungi" per inserire i dati
+- **Manualmente**: Aggiungi i pezzi specificando lunghezza e quantità
+- **Da Excel**: Importa i dati da file Excel formattati (usa "Crea Excel Esempio" per il formato corretto)
 
 ### 3. Ottimizzazione
 
-- Clicca su "Ottimizza" per calcolare la soluzione migliore
-- Genera piu scenari per confrontare diverse opzioni
+- Clicca su **"Ottimizza"** per calcolare la soluzione migliore
+- Genera più scenari per confrontare diverse opzioni
 - Visualizza scarti e numero di barre utilizzate
 
 ### 4. Esportazione
 
-- **PDF**: Report completo con schema di taglio per ogni barra
-- **Excel**: Tabella dettagliata per analisi e archivio
+- **PDF**: Report completo con schema di taglio per ogni barra, pronto per l'officina
 
-## Funzionalita avanzate
+### 5. Import/Export Excel
 
-### Calcola fabbisogno
+L'applicazione può:
+- **Creare file Excel di esempio** con il pulsante "Crea Excel Esempio"
+- **Importare dati** da file Excel formattati come gli esempi generati
+- I file esempio includono:
+  - Barre disponibili in magazzino
+  - Catalogo venditore con prezzi
+  - Lista pezzi richiesti
 
-Calcola automaticamente il numero minimo di barre necessarie per i tuoi pezzi, considerando:
-- Tutte le barre disponibili nel magazzino
-- Ottimizzazione degli scarti
-- Costi di acquisto
+## 🔧 Funzionalità avanzate
+
+### Calcola fabbisogno materiale
+
+Funzione intelligente che calcola automaticamente il materiale da ordinare al venditore:
+- Analizza le barre disponibili nel magazzino
+- Calcola il fabbisogno minimo considerando l'ottimizzazione
+- Riduce gli scarti e i costi di acquisto
+- Suggerisce cosa ordinare in base al catalogo del venditore
 
 ### Gestione scenari
 
@@ -137,7 +163,7 @@ Le contribuzioni sono benvenute! Per contribuire:
 
 ## Segnalazione bug
 
-Se trovi un bug, apri una [Issue](https://github.com/TUO_USERNAME/ottimizzatore-taglio-barre/issues) descrivendo:
+Se trovi un bug, apri una [Issue](https://github.com/Nicolacecca/ottimizzatore-taglio-barre/issues) descrivendo:
 - Il problema riscontrato
 - I passi per riprodurlo
 - Il comportamento atteso
